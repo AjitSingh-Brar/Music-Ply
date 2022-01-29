@@ -1,1 +1,177 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "san-serif";
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background: #11101d;
+  padding: 6px 14px;
+  transition: all 0.5s ease;
+}
+
+.sidebar .logo_section .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+
+.logo_section .logo {
+  font-size: 28px;
+  margin-right: 5px;
+}
+
+.logo_section .logo .logo_name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar #btn {
+  color: #fff;
+  position: absolute;
+  left: 80%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.sidebar ul {
+  margin-top: 20px;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+}
+
+.sidebar ul li input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: #1d1b31;
+  padding-left: 50px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.sidebar ul li .bx-search-alt {
+  position: absolute;
+  z-index: 99;
+  color: #fff;
+  top: 0;
+  font-size: 22px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 12px;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+
+.sidebar ul li a:hover {
+  background: #fff;
+  color: #11101d;
+}
+
+.sidebar ul li i {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sidebar .profile_section {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* sidebar .links_name css to be applied */
+
+.sidebar .profile_section .profile {
+  position: relative;
+  padding: 10px 6px;
+  height: 60px;
+  background: #1d1b31;
+}
+
+.profile_section .profile .profile_info {
+  display: flex;
+  align-items: center;
+}
+
+.profile .profile_info img {
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.profile .profile_info .name_work {
+  margin-left: 10px;
+}
+
+.profile .profile_info .name {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.profile .profile_info .work {
+  font-size: 12px;
+}
+
+.profile #logout_option {
+  position: absolute;
+  left: 88%;
+  bottom: 5px;
+  min-width: 50px;
+  line-height: 50px;
+}
+
+.home_section {
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 240px);
+  left: 240px;
+}
+
+.home_section {
+  font-size: 25px;
+  font-weight: 500;
+  color: #1d1b31;
+  margin: 12px;
+}
